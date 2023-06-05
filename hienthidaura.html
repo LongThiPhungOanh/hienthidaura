@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div id="id"></div>
+<button type="button" onclick="showMessage();">click me</button>
+<button type="button" onclick="showMessage1();">click me</button>
+<button type="button" onclick="showMessage2();">click me</button>
+<button type="button" onclick="showMessage3();">click me</button>
+<script>
+function showMessage(){
+    document.write("hello")
+}
+function showMessage1(){
+    console.log("hello")
+}
+function showMessage2(){
+    document.getElementById('id').innerHTML = showMessage()
+}
+function showMessage3(){
+    alert("hello")
+}
+</script>
+</body>
+</html>
